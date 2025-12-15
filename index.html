@@ -9,13 +9,59 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body x-data="{tab: 'menu'}">
-    <section x-show="tab === 'menu'">
-        <div class="max-w-6xl mx-auto flex items-center flex-col">
+    <section x-show="tab === 'menu'" class="bg-slate-900 py-16 min-h-screen">
+        <div class="max-w-6xl mx-auto flex items-center flex-col mb-16">
             <figure>
-                <img class="w-70" src="./assets/logo_sdm.png" alt="Logo do show do milhão">
+                <img class="w-100" src="./assets/logo_sdm.png" alt="Logo do show do milhão">
                 <figcaption></figcaption>
             </figure>
-            <h3 class="text-2xl">Edição natal do MEG</h3>
+            <h3 class="text-2xl text-white text-4xl font-semibold">Edição natal do MEG</h3>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 max-w-6xl m-auto">
+            <article class="card card-xl bg-purple-950">
+                <div class="card-body">
+                    <h3 class="card-title text-white font-bold">Geoghosts</h3>
+                    <h5 class="text-white font-semibold">Mestres do invisível e do desconhecido.</h5>
+                    <p class="text-white">Esta guilda atravessa sombras, mapas esquecidos e mistérios que poucos ousam enfrentar. Você tem coragem de encarar o que se esconde além do óbvio?</p>
+                    <div class="card-actions mt-4">
+                        <button class="btn btn-neutral bg-purple-700 w-full">Enfrentar o Desconhecido</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card card-xl bg-blue-950">
+                <div class="card-body">
+                    <h3 class="card-title text-white font-bold">Geodragons</h3>
+                    <h5 class="text-white font-semibold">Força, estratégia e fogo na mente.</h5>
+                    <p class="text-white">Os Geodragons dominam territórios vastos e desafios lendários. Apenas quem pensa rápido e responde com precisão sobrevive a essa batalha.</p>
+                    <div class="card-actions mt-4">
+                        <button class="btn btn-neutral bg-blue-700 w-full">Despertar a chama</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card card-xl bg-pink-950">
+                <div class="card-body">
+                    <h3 class="card-title text-white font-bold">Geofadas</h3>
+                    <h5 class="text-white font-semibold">Conhecimento leve, mas poderoso.</h5>
+                    <p class="text-white">Entre mapas encantados e saberes antigos, essa guilda prova que inteligência e agilidade são suas maiores magias. Está pronto para voar pelo desafio</p>
+                    <div class="card-actions mt-4">
+                        <button class="btn btn-neutral bg-pink-700 w-full">Entrar no Reino Encantado</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card card-xl bg-fuchsia-950">
+                <div class="card-body">
+                    <h3 class="card-title text-white font-bold">Geopsycho</h3>
+                    <h5 class="text-white font-semibold">A mente é a maior arma.</h5>
+                    <p class="text-white">Lógica, percepção e pensamento afiado definem esta guilda. Cada pergunta é um teste mental — só os mais atentos avançam.</p>
+                    <div class="card-actions mt-4">
+                        <button class="btn btn-neutral bg-fuchsia-700 w-full">Desafiar a Mente</button>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 </body>
